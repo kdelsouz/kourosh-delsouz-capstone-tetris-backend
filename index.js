@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5050;
 
-const warehouseRoutes = require('./routes/warehouseRoute');
+const scoreRoutes = require('./routes/scoreRoute');
 
-app.use('/warehouses', warehouseRoutes);
+app.use('/scores', scoreRoutes);
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
