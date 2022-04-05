@@ -7,6 +7,10 @@ module.exports = {
         password: "rootroot",
         database: "tetris_db",
     }
-  }
-
+  },
+  production: {
+    client: 'mysql',
+    connection: process.env.JAWSDB_URL,
+  },
 };
+
